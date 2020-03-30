@@ -2,4 +2,6 @@
     <string name="app_name">IMC App</string>
     <string name="estatura">Ingrese su estatura (cm)</string>
     <string name="peso">Ingrese su peso (lb)</string>
+    <string name="procesar">Procesar</string>
+
 </resources>
