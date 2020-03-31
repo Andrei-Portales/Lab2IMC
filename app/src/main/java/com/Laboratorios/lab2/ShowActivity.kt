@@ -24,11 +24,11 @@ class ShowActivity : AppCompatActivity() {
             // delgadez
             txtMensaje.setText("Delgadez")
             imgEstado.setImageResource(R.drawable.delgado)
-        }else if (imc >= 18.5 && imc <= 24.9){
+        }else if (imc <= 24.9){
             // saludable
             txtMensaje.setText("Peso Saludable")
             imgEstado.setImageResource(R.drawable.saludable)
-        }else if(imc >= 25.0 && imc <= 29.9){
+        }else if(imc <= 29.9){
             // sobrepeso
             txtMensaje.setText("Sobrepeso")
             imgEstado.setImageResource(R.drawable.gordo)
