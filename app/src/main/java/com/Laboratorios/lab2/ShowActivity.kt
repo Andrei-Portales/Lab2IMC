@@ -15,23 +15,28 @@ class ShowActivity : AppCompatActivity() {
 
         var imc = intent.extras?.get("imc")
         txtValor.setText("%.1f".format(imc))
-
+        imgEstado.setImageResource(R.drawable.muydelgado)
         imc = "%.1f".format(imc).toFloat()
         if (imc <= 15.9){
             // delgadez severa
             txtMensaje.setText("Delgadez Severa")
+
         }else if(imc >= 16.0 && imc <= 18.4){
             // delgadez
             txtMensaje.setText("Delgadez")
+            imgEstado.setImageResource(R.drawable.delgado)
         }else if (imc >= 18.5 && imc <= 24.9){
             // saludable
             txtMensaje.setText("Peso Saludable")
+            imgEstado.setImageResource(R.drawable.saludable)
         }else if(imc <= 25.0 && imc >= 29.9){
             // sobrepeso
             txtMensaje.setText("Sobrepeso")
+            imgEstado.setImageResource(R.drawable.gordo)
         }else if (imc >= 30.0){
             // muy sobrepeso
             txtMensaje.setText("Muy Sobrepeso")
+            imgEstado.setImageResource(R.drawable.muygordo)
         }
 
     }
