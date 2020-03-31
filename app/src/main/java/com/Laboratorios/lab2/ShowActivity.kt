@@ -2,7 +2,6 @@ package com.Laboratorios.lab2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_show.*
 
 class ShowActivity : AppCompatActivity() {
@@ -21,7 +20,7 @@ class ShowActivity : AppCompatActivity() {
             // delgadez severa
             txtMensaje.setText("Delgadez Severa")
 
-        }else if(imc >= 16.0 && imc <= 18.4){
+        }else if(imc <= 18.4){
             // delgadez
             txtMensaje.setText("Delgadez")
             imgEstado.setImageResource(R.drawable.delgado)
@@ -29,7 +28,7 @@ class ShowActivity : AppCompatActivity() {
             // saludable
             txtMensaje.setText("Peso Saludable")
             imgEstado.setImageResource(R.drawable.saludable)
-        }else if(imc <= 25.0 && imc >= 29.9){
+        }else if(imc >= 25.0 && imc <= 29.9){
             // sobrepeso
             txtMensaje.setText("Sobrepeso")
             imgEstado.setImageResource(R.drawable.gordo)

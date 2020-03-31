@@ -11,14 +11,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         startBotones()
-
-
-
     }
 
     /**
@@ -36,7 +32,6 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     txtEstatura.setText(null)
                     txtPeso.setText(null)
-
                 }else{
                     Toast.makeText(this, "Ingrese un valor entre 1 y 270", Toast.LENGTH_LONG).show()
                     txtEstatura.setText(null)
@@ -51,7 +46,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "IMC = Peso (kg) / altura (m)2", Toast.LENGTH_SHORT).show()
             return@setOnLongClickListener true
         }
-
     }
 
     /**
